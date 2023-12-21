@@ -1,0 +1,36 @@
+#experience {
+  margin: 12rem 0;
+}
+.skills-section {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.icon-skill {
+  font-size: 60px;
+  margin-bottom: 4px;
+}
+.skills-desc {
+  font-size: 24px;
+}
+.slider-container {
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 1024px) {
+  #experience {
+    margin: 8rem 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #experience {
+    margin: 6rem 0;
+  }
+}

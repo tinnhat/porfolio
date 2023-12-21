@@ -1,38 +1,101 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #1f1f38;
+  color: #fff;
+  line-break: 1.7;
+  background-image: url(../src/assets/bg-texture.png);
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin-top: 8rem;
+}
+section > h2,
+section > h5 {
   text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+section > h2 {
+  color: #4db5ff;
+  margin-bottom: 3rem;
+}
+.text-light {
+  color: rgba(255, 255, 255, 0.6);
+}
+a {
+  color: #4db5ff;
+
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: #fff;
+}
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: #4db5ff;
+  padding: 0.75rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #4db5ff;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #1f1f38;
+  border-color: transparent;
+}
+.btn-primary {
+  background: #4db5ff;
+  color: #1f1f38;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 86%;
+  }
+  section {
+    margin-top: 6rem;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  section > h2 {
+    margin-bottom: 2rem;
   }
 }

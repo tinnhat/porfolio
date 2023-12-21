@@ -1,0 +1,59 @@
+@import "../../variable";
+footer {
+  background: $color-primary;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+  a {
+    color: $color-bg;
+  }
+  .footer__logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+}
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 2rem;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  a {
+    background: $color-bg;
+    color: #fff;
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    transition: $transion;
+    &:hover {
+      color: $color-primary;
+      background-color: #fff;
+    }
+  }
+}
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: $color-bg;
+}
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer__socials {
+    margin-bottom: 2.4rem;
+  }
+}

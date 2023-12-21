@@ -1,0 +1,51 @@
+@import "../../variable";
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.about__card {
+  background-color: $color-bg-variant;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: $transion;
+}
+.about__card:hover {
+  background: transparent;
+  border-color: $color-primary-variant;
+  cursor: default;
+}
+.about__icon {
+  color: $color-primary;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.about__card h5 {
+  font-size: 0.9rem;
+}
+.about__card small {
+  font-size: 0.7rem;
+  color: $color-light;
+}
+.box-infomation {
+  text-align: center;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    width: 50%;
+    margin: 1.4rem 0;
+    color: $color-light;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+}
