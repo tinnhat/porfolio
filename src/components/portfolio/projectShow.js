@@ -6,6 +6,8 @@ import imgVeggy from '../../assets/veggy.png'
 import imgBarter from '../../assets/barter.png'
 import imgOrganick from '../../assets/organick.png'
 import imgTyper from '../../assets/typer.png'
+import imgTodo from '../../assets/todo.png'
+import imgMovie from '../../assets/movie.png'
 
 
 
@@ -46,10 +48,10 @@ export const data = [
     skills: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    img: '',
+    img: imgTodo,
     description: 'A todo list app for each users',
-    demoLink: 'https://tinnhat.github.io/youtube/',
-    githubLink: 'https://github.com/tinnhat/todo-list-fe',
+    demoLink: 'https://todo-ts-swart.vercel.app/todo',
+    githubLink: 'https://github.com/tinnhat/todo-ts',
     skills: [
       'HTML',
       'CSS',
@@ -68,13 +70,6 @@ export const data = [
     skills: ['HTML', 'CSS', 'ReactJS', 'ExpressJS', 'Typescript', 'ChakraUI'],
   },
   {
-    img: '',
-    description: 'Clone new version spotify',
-    demoLink: 'https://tinnhat.github.io/youtube/',
-    githubLink: 'https://github.com/tinnhat/youtube',
-    skills: ['HTML', 'CSS', 'Javascript', 'Typescript'],
-  },
-  {
     img: imgOrganick,
     description: 'An UI website information about vegetable and fruit',
     demoLink: 'https://organick-tau.vercel.app/',
@@ -82,10 +77,10 @@ export const data = [
     skills: ['HTML', 'CSS', 'Javascript', 'ReactJS'],
   },
   {
-    img: '',
+    img: imgMovie,
     description: 'An website about movie',
-    demoLink: 'https://tinnhat.github.io/youtube/',
-    githubLink: 'https://github.com/tinnhat/youtube',
+    demoLink: 'https://nt-movies.vercel.app',
+    githubLink: 'https://github.com/tinnhat/nt-movies',
     skills: ['HTML', 'CSS', 'Javascript', 'ReactJS'],
   },
   {
